@@ -1,0 +1,50 @@
+{
+  "name": "node-boilerplate",
+  "version": "1.0.0",
+  "description": "Form Test Backend with NodeJS",
+  "main": "server.js",
+  "author": "github.com/shamsla",
+  "license": "MIT",
+  "scripts": {
+    "start": "npm run build && node build/server.js",
+    "dev": "nodemon",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "build": "rimraf ./build && tsc",
+    "lint:check": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
+    "format:check": "prettier --check .",
+    "format:fix": "prettier --write ."
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "helmet": "^4.6.0",
+    "joi": "^17.5.0",
+    "reflect-metadata": "^0.1.13",
+    "supertest": "^6.2.0"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/joi": "^17.2.3",
+    "@types/supertest": "^2.0.11",
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/jest": "^27.4.0",
+    "@types/node": "^17.0.5",
+    "@typescript-eslint/eslint-plugin": "^5.8.1",
+    "@typescript-eslint/parser": "^5.8.1",
+    "eslint": "^8.5.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-node": "^4.1.0",
+    "eslint-plugin-import": "^2.25.3",
+    "jest": "^27.4.7",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.1",
+    "ts-jest": "^27.1.2",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4"
+  }
+}
